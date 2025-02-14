@@ -1,8 +1,7 @@
 import { error } from "console";
 
 export const isTitleEmpty = (songTitle: string): boolean => {
-  let isEmpty: boolean;
-  isEmpty = songTitle === "";
+  let isEmpty = songTitle === "";
 
   return isEmpty;
 };
@@ -11,22 +10,19 @@ export const doesTitleExist = (
   songTitle: string,
   songTitles: string[]
 ): boolean => {
-  let doesExist: boolean;
-  doesExist = songTitles.includes(songTitle);
+  let doesExist = songTitles.includes(songTitle);
 
   return doesExist;
 };
 
 export const isTitleShort = (songTitle: string): boolean => {
-  let isShort: boolean;
-  isShort = songTitle.length < 3;
+  let isShort = songTitle.length < 3;
 
   return isShort;
 };
 
 export const isPlaylistFull = (songTitles: string[]): boolean => {
-  let isFull: boolean;
-  isFull = songTitles.length >= 5;
+  let isFull = songTitles.length >= 5;
 
   return isFull;
 };
@@ -40,8 +36,7 @@ export const sortSongs = (songTitles: string[]): void => {
 };
 
 export const getSongsCount = (songTitles: string[]): number => {
-  let songsCount: number;
-  songsCount = songTitles.length;
+  let songsCount = songTitles.length;
 
   return songsCount;
 };
